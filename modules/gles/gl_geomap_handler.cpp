@@ -972,7 +972,7 @@ GLGeoMapHandler::configure_resource (const SmartPtr<Parameters> &param)
     ret = ensure_default_params ();
     XCAM_FAIL_RETURN (
         ERROR, ret == XCAM_RETURN_NO_ERROR, ret,
-        "gl-geomap ensure default paramaters failed");
+        "gl-geomap ensure default parameters failed");
 
     const VideoBufferInfo &info = param->in_buf->get_video_info ();
     SmartPtr<GLGeoMapPriv::ComMap> commapper;
